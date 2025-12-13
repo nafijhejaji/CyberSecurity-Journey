@@ -1,0 +1,14 @@
+def encrypt(text, shift):
+    return "".join(chr(ord(c) + shift) for c in text)
+
+def decrypt(text, shift):
+    return "".join(chr(ord(c) - shift) for c in text)
+
+msg = input("Enter message: ")
+key = int(input("Enter key: "))
+
+encrypted = encrypt(msg, key)
+print("Encrypted:", encrypted)
+
+decrypted = decrypt(encrypted, key)
+print("Decrypted:", decrypted)
