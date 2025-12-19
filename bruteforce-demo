@@ -1,0 +1,7 @@
+real_password = "123"
+attempts = ["111", "123", "222"]
+
+for pwd in attempts:
+    if pwd == real_password:
+        print("Password found:", pwd)
+        break
